@@ -9,15 +9,15 @@
 
 /*containerh: Es el elemento padre que tendrá en su interior cada uno de los ítems flexibles. */
 .flex-containerh {
-    display: inline-flex;   /* Esta propiedad define al div como contenedor flex*/
+    display: flex;   /* Esta propiedad define al div como contenedor flex*/
     flex-direction: row;
     /* probar row-reverse */
-    background-color: yellowgreen;
+    background-color: rgb(58, 228, 100);
 }
 /*Cada uno de los hijos flexibles que tendrá el contenedor horizontal en su interior. */
 .flex-containerh > div {  /*Utilizamos selectores avanzados en lugar de clases */
     color: white;
-    background-color: green;
+    background-color:rgb(232, 168, 146);
     margin: 20px;
     padding: 40px;
     font-size: 30px;
@@ -110,13 +110,13 @@ img {
 
 
 .imagen {width: 90%;
-    padding:5px
+    padding:2px
 
 }
 
 img:hover {
     width:95%;
-    padding: 5px
+    padding: 2px
 }
 
 @media only screen and (max-width: 500px){
