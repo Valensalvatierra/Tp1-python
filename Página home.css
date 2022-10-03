@@ -1,21 +1,15 @@
-/*----------------------------------------------------------------*/
-/* Hoja de estilos                                                */
-/*----------------------------------------------------------------*/
-/* Fuente para toda la página */
+
 * {font-family: 'Courier New', Courier, monospace;}
 
 
-
-
-/*containerh: Es el elemento padre que tendrá en su interior cada uno de los ítems flexibles. */
 .flex-containerh {
-    display: flex;   /* Esta propiedad define al div como contenedor flex*/
+    display: flex;  
     flex-direction: row;
-    /* probar row-reverse */
-    background-color: rgb(58, 228, 100);
+    
+    background-color: rgb(95, 239, 131);
 }
-/*Cada uno de los hijos flexibles que tendrá el contenedor horizontal en su interior. */
-.flex-containerh > div {  /*Utilizamos selectores avanzados en lugar de clases */
+
+.flex-containerh > div {  
     color: white;
     background-color:rgb(232, 168, 146);
     margin: 20px;
@@ -27,36 +21,31 @@
 .container {
     display: grid;
 
-    /* Uso un atajo para definir tres filas / tres columnas */
+    
     grid-template: 200px 300px auto / 30% auto 30%; 
 
-    /* Distribuimos el contenido en cada fila */
+    
     grid-template-areas: "header header header" 
                          "izq contenido der" 
                          "pie pie pie";
 
-    /* separamos los items con gap */
+    
     gap: 2%;
 
-    /* Hacemos que el diseño ocupe casi el alto total del navegador */
-    /* height: 90vh; */
+    
 }
 
 
-/*----------------------------------------------------------------*/
-/* Defino el nombre y color de cada area del grid                 */
-/*----------------------------------------------------------------*/
+
 .principal {grid-area: principal; background-color: crimson;}
-.header    { grid-area: header;    background-color: rgb(0, 247, 255);  }
+.header    { grid-area: header;    background-color: rgb(95, 239, 131);  }
 .izq       { grid-area: izq;       background-color: coral;  }
 .der       { grid-area: der;       background-color: coral;}
 .contenido { grid-area: contenido; background-color: rgb(241, 169, 133);}
 .pie       { grid-area: pie;       background-color: rgb(0, 247, 255);  }
 
 
-/*----------------------------------------------------------------*/
-/* Definimos la apariencia de cada item del grid                  */
-/*----------------------------------------------------------------*/
+
 .item {
     padding: 10px;
     color: darkgreen;
@@ -64,9 +53,7 @@
 }
 
 
-/*----------------------------------------------------------------*/
-/* Imagen con bordes redondeados, con limites de tamaño           */
-/*----------------------------------------------------------------*/
+
 img {
     border-radius: 30px;
     width: 100%;
@@ -74,9 +61,7 @@ img {
   }
 
 
-/*----------------------------------------------------------------*/
-/* Punto de corte para pantallas tipo tablet                      */
-/*----------------------------------------------------------------*/
+
 @media only screen and (max-width: 800px) {
     .container {
         /* Uso un atajo para definir 4 filas / 2 columna */
@@ -88,9 +73,7 @@ img {
 }
 
 
-/*----------------------------------------------------------------*/
-/* Punto de corte para pantallas tipo celular                     */
-/*----------------------------------------------------------------*/
+
 @media only screen and (max-width: 600px) {
     .container {
         /* Uso un atajo para definir 6 filas / 1 columna */
@@ -110,13 +93,13 @@ img {
 
 
 .imagen {width: 90%;
-    padding:2px
+    padding:5px
 
 }
 
 img:hover {
     width:95%;
-    padding: 2px
+    padding: 5px
 }
 
 @media only screen and (max-width: 500px){

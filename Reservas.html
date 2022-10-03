@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulario de Reserva</title>
+    <link rel="icon" href="imagenes/Peachpuff Brush Stroke Photography Logo (9).png" width: 100px>
+    <link rel="stylesheet" href="Reservas.css">
+</head>
+<body>
+    <h1>Hace tu Reserva</h1>
+    
+    <div>
+        <form class="For_res" action="mostrar_datos.html" target="_blank">
+
+<div class="sucursal_r">
+       <LEgend>Sucursal</LEgend>     
+       <label> <input type="Radio" name="Suc" id="suc_Pal" value="Palermo">Palermo</label>
+       <label> <input type="Radio" name="Suc" id="suc_Nor" value="Norte">Zona Norte</label>
+    </div>
+       
+       
+<div class="comensales_r">
+       <label for="Com_for">Comensales: </label>
+       <select name="Comensales" id="Com_for" placeholder="Seleccione Sucursal">
+            <option value="-">-</option>
+            <option value="2">2</option>
+           <option value="3">3</option>
+           <option value="4">4</option>
+           <option value="5">5</option>
+           <option value="6">6</option>
+           <option value="7">7</option>
+           <option value="8">8</option>
+       </select>
+    
+    </div>
+
+    <div class="fechas_r">
+       
+        <label for="Fecha_form">Fecha: </label>
+        <input type="date" name="Fecha" id="Fecha_form">
+     
+    </div>
+    
+    <div class="horario_r">
+
+        <label for="Hor_for">Servicio-Horario:</label>
+        <select name="Horario" id="Com_for" placeholder="Seleccione Sucursal">
+            <option value="-">Elija una opción </option>
+            <option value="1">Almuerzo - 12 hs. </option>
+            <option value="3">Almuerzo - 13 hs. </option>
+            <option value="4">Almuerzo - 14 hs. </option>
+            <option value="5">Cena - 20 hs. </option>
+            <option value="6">Cena - 21 hs. </option>
+            <option value="7">Cena - 22 hs. </option>
+            
+        </select>
+        </div>
+      
+    
+        <div class="info_r">
+        <label for="Nom_for">Nombre: </label>
+        <input type="text" name="Nombre" id="Nom_for">
+    
+
+        <label for="Ape_for">Apellido: </label>
+        <input type="text" name="Apellido" id="Ape_for">
+      <br><br>
+        <label for="Tel_for">Tel.: </label>
+        <input type="tel" name="Tel" id="Tel_for">
+     <br><br>
+        <label for="Email_for">Email: </label>
+        <input type="email" name="Mail" id="Mail_for">
+    
+        </div>
+
+<div class="enviar_r">
+        <button id="submit">Enviar</button>
+        
+    </div>      
+
+</form>
+
+    
+    </div>
+
+</body>
+</html> 
