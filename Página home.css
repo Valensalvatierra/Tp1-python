@@ -54,7 +54,7 @@
 
 
 
-img {
+.logo {
     border-radius: 30px;
     width: 100%;
     max-width:400px;
@@ -93,12 +93,13 @@ img {
 
 
 .imagen {width: 90%;
-    padding:5px
+        padding:5px;
+        border-radius: 15px;
 
 }
 
-img:hover {
-    width:95%;
+.imagen:hover {
+    width: 95%;
     padding: 5px
 }
 
